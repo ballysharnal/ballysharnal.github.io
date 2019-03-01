@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 1.8rem;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    text-align: justify;
+    padding: 0 5%;
+}
+.section{
+    border-top: 1px solid #333;
+    margin-top: 2%;
+}
+*[class ^= "col-"]{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*-----------NAVBAR--------------*/
+
+.navbar div{
+    border: 1px solid #333;
+}
+.navbar div:nth-child(2n){
+    background: #666;
+    color: #eee;
+}
+.navbar div:nth-child(2n + 1){
+    background: #aaa;
+}
+.navbar a{
+    display: block;
+    text-align: center;
+}
+/*-----------CAROUSEL----------------*/
+.carousel-caption{
+    position:absolute;
+    top: 40%;
+}
+.carousel-caption h2, .carousel-caption h3{
+    font-size: .5rem;
+}
+/*----------CARD REWARD-----------*/
+
+.cardreward{
+    position: relative;
+}
+.navFellow{
+    color: #eee;
+    background: blue;
+    border-radius: 1%;
+    text-align: center;
+    margin-right: 1%;
+    padding: 0 .5%;
+}
+.rowReward{
+    margin-left: 2%;
+}
+.cardreward img{
+    opacity: 0.7;
+}
+h2.cardtext{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 5%;
+    background: rgba(210, 210, 210, .7);
+    border-radius: 2%;
+    padding: 2px 4px;
+    color: orange;
+}
+h2.h2dead{
+    left: calc(50% - 50px);
+}
+.img_140{
+    margin:5% 0;
+    margin-left: calc(50% - 70px);
+
+}
+
+.cardreward:hover img{
+    opacity: 1;
+}
+.cardreward:hover h2.cardtext{
+    font-size: 1.2rem;
+    top: 60%;
+    left: calc(50% - 100px);
+    color: #eee;
+}
+
+.cardreward:hover h2.h2dead{
+    font-size: 2.5rem;
+    top: 40%;
+    left: calc(50% - 100px);
+}
+/*-------table---------*/
+
+table{
+    border-collapse: collapse;
+    margin: 2%;
+    width: 96%;
+    height: 150px;
+    text-align: center;
+}
+table th, table td{
+    border: 2px solid #333;
+    width: 50%;
+}
+table thead tr{
+    background: #666;
+    color: #eee;
+}
+table tbody tr:nth-child(2n+1){
+    background: #aaa;
+}
+/*---------end table---------------*/
+h2{
+    padding-top: 2%;
+}
+/****************RING****************/
+.cardtable{
+    width: 90%;
+    margin-left: 5%;
+}
+/**************END OF RING*****************/
+/**************** FOOTER ***********************/
+.footer{
+    background: #333;
+}
+.footer ul{
+    padding: 2%;
+}
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.footer a{
+    text-decoration: none;
+    color: #eee;
+    margin-bottom: 5%;
+}
+.footer li{
+    display: inline-block;
+    width: 33.3333%;
+}
+.footer li a{
+    padding: 5%;
+}
+.footer li:nth-child(3){
+    font-weight: bold;
+    vertical-align: top;
+}
+
+/*--------------Buttons------------*/
+
+.btncontact{
+    margin-left: calc(50% - 51px);
+}
+.btnSauronRule{
+    margin-left: calc(50% - 152.5px);
+}
+
+/*-------------Span-------------*/
+#fellowsSpeech{
+    font-size: .8rem;
+}
+@media screen and (min-width: 410px) and (max-width: 750px){
+    .rowReward{
+        margin-left: calc(50% - 160px);
+    }
+}
+@media screen and (min-width: 768px){
+    .carousel-caption h2, .carousel-caption h3{
+        font-size: 2.5rem;
+    }
+    .cardreward{
+        width: 20rem;
+    }
+
+    .rowReward{
+        margin-left: 0;
+    }
+
+}
+@media screen and (min-width: 924px){
+    .navbar div{
+        border: none;
+    }
+    .navbar div:nth-child(2n){
+        background: none;
+        color: none;
+    }
+    .navbar div:nth-child(2n + 1){
+        background: none;
+    }
+    .cardreward{
+        width: 20rem;
+    }
+}
